@@ -1,0 +1,1 @@
+gcloud compute --project=reference-node-451306-f5 firewall-rules create allow-http-https1 --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:22,tcp:80,tcp:443 --source-ranges=0.0.0.0/0 --enable-logging
